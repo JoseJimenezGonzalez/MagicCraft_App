@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_tools"
+    app:startDestination="@id/lifeCountFragment">
+
+    <fragment
+        android:id="@+id/diceFragment"
+        android:name="com.example.magiccraftapp.DiceFragment"
+        android:label="fragment_dice"
+        tools:layout="@layout/fragment_dice" />
+    <fragment
+        android:id="@+id/lifeCountFragment"
+        android:name="com.example.magiccraftapp.LifeCountFragment"
+        android:label="fragment_life_count"
+        tools:layout="@layout/fragment_life_count" />
+    <fragment
+        android:id="@+id/stormCountFragment"
+        android:name="com.example.magiccraftapp.StormCountFragment"
+        android:label="fragment_storm_count"
+        tools:layout="@layout/fragment_storm_count" />
+    <fragment
+        android:id="@+id/tournamentFragment"
+        android:name="com.example.magiccraftapp.TournamentFragment"
+        android:label="fragment_tournament"
+        tools:layout="@layout/fragment_tournament" />
+</navigation>

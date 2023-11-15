@@ -1,72 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ToolsFragment">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvDescriptionTools"
+    <!-- Contenido principal incluyendo el diseño del encabezado del menú -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:padding="10dp"
-        android:text="Herramientas"
-        android:textAlignment="center">
-    </TextView>
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnDice"
+        <!-- Incluir el diseño del encabezado del menú -->
+        <include
+            layout="@layout/nav_header_tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start" />
+
+        <!-- Resto del contenido específico del fragmento o de la actividad -->
+        <!-- Puedes agregar más vistas aquí según tus necesidades -->
+
+    </FrameLayout>
+
+    <!-- Menú lateral -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDescriptionTools"
-        android:text="Lanzamiento de dados">
-    </Button>
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_tools"
+        app:menu="@menu/tools_menu" />
 
-    <Button
-        android:id="@+id/btnLifeCount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnDice"
-        android:text="Contador de vida">
-    </Button>
+</androidx.drawerlayout.widget.DrawerLayout>
 
-    <Button
-        android:id="@+id/btnTournament"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnLifeCount"
-        android:text="Hacer torneo">
-    </Button>
-
-    <Button
-        android:id="@+id/btnTormentCount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnTournament"
-        android:text="Los hombres de verdad juegan combo">
-    </Button>
-
-    <Button
-        android:id="@+id/btnRules"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnTormentCount"
-        android:text="Reglas">
-    </Button>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
