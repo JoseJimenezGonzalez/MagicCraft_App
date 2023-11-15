@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "690472144796",
+    "project_id": "magiccraft-b5219",
+    "storage_bucket": "magiccraft-b5219.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690472144796:android:461a0e36c2a4423a800259",
+        "android_client_info": {
+          "package_name": "com.example.magiccraftapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDXR3w7Q8T3yvI5Nd6X_7XIWR9vSdgqbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

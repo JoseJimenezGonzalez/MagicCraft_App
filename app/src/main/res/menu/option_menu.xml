@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Inicio"
+        android:icon="@drawable/ic_home">
+    </item>
+    <item
+        android:id="@+id/decksFragment"
+        android:title="Mazos"
+        android:icon="@drawable/ic_decks">
+    </item>
+    <item
+        android:id="@+id/searchCardsFragment"
+        android:title="Buscar"
+        android:icon="@drawable/ic_search">
+    </item>
+    <item
+        android:id="@+id/setsFragment"
+        android:title="Sets"
+        android:icon="@drawable/ic_collection">
+    </item>
+    <item
+        android:id="@+id/toolsFragment"
+        android:title="Herramientas"
+        android:icon="@drawable/ic_tools">
+    </item>
+</menu>

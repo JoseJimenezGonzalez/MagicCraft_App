@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountActivity">
+
+    <LinearLayout
+        android:id="@+id/lyNameApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            android:padding="14dp"
+            android:textSize="24sp"
+            android:textAlignment="center">
+        </TextView>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etMail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lyNameApp"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
+        app:layout_constraintBottom_toTopOf="@id/etPassword"
+        android:inputType="textEmailAddress"
+        android:hint="Introduce el correo electronico">
+    </EditText>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etMail"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
+        app:layout_constraintBottom_toTopOf="@id/etRepeatPassword"
+        android:inputType="textPassword"
+        android:hint="Introduce la contraseña">
+    </EditText>
+
+    <EditText
+        android:id="@+id/etRepeatPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/btnCreateAccount"
+        android:hint="Introduce la contraseña">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
+        app:layout_constraintTop_toBottomOf="@id/etRepeatPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Crear cuenta">
+    </Button>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

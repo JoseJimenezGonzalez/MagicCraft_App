@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.magiccraftapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/searchCardsFragment"
+        android:name="com.example.magiccraftapp.SearchCardsFragment"
+        android:label="fragment_search_cards"
+        tools:layout="@layout/fragment_search_cards" />
+    <fragment
+        android:id="@+id/toolsFragment"
+        android:name="com.example.magiccraftapp.ToolsFragment"
+        android:label="fragment_tools"
+        tools:layout="@layout/fragment_tools" />
+    <fragment
+        android:id="@+id/setsFragment"
+        android:name="com.example.magiccraftapp.SetsFragment"
+        android:label="fragment_sets"
+        tools:layout="@layout/fragment_sets" >
+        <action
+            android:id="@+id/action_setsFragment_to_setCardsFragment"
+            app:destination="@id/setCardsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setCardsFragment"
+        android:name="com.example.magiccraftapp.SetCardsFragment"
+        android:label="fragment_set_cards"
+        tools:layout="@layout/fragment_set_cards" />
+    <fragment
+        android:id="@+id/decksFragment"
+        android:name="com.example.magiccraftapp.DecksFragment"
+        android:label="fragment_decks"
+        tools:layout="@layout/fragment_decks" />
+</navigation>
