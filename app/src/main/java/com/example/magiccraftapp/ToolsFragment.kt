@@ -26,7 +26,7 @@ class ToolsFragment : Fragment() {
         val view = binding.root
 
         // Configurar el botón para abrir el menú lateral
-        binding.ivTools.setOnClickListener {
+        binding.ivToolst.setOnClickListener {
             // Obtener el DrawerLayout desde la actividad
             val drawerLayout = requireActivity().findViewById<DrawerLayout>(R.id.drawer_layout)
             // Abrir el menú lateral
