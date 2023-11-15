@@ -5,17 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
 import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
 import com.example.magiccraftapp.databinding.FragmentToolsBinding
+
 
 class ToolsFragment : Fragment() {
 
     private var _binding: FragmentToolsBinding? = null
     private val binding get() = _binding!!
-
-    private lateinit var drawerLayout: DrawerLayout
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,6 +20,18 @@ class ToolsFragment : Fragment() {
     ): View? {
         // Inflar el layout y obtener la referencia al View Binding
         _binding = FragmentToolsBinding.inflate(inflater, container, false)
-        return binding.root
+        val view = binding.root
+
+        // Configurar el botón para abrir el menú lateral
+        binding.ibMenuBurguer.setOnClickListener {
+
+        }
+
+        return view
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

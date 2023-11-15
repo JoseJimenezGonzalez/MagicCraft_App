@@ -9,26 +9,16 @@
     android:gravity="bottom"
     android:background="?attr/colorPrimaryDark">
 
-    <ImageView
-        android:id="@+id/ivTools"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/ic_launcher_foreground"
-        android:scaleType="centerCrop"/>
-
     <TextView
         android:id="@+id/tvTools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/ivTools"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:text="Herramientas"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="15dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
