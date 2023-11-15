@@ -1,21 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- res/layout/fragment_tools.xml -->
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:showIn="@layout/fragment_tools"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/ibMenuBurguer"
-        android:src="@drawable/ic_menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </ImageButton>
+    <!-- Contenido del DrawerLayout aquí -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Contenido principal del fragmento -->
+        <!-- ... tu contenido principal aquí ... -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp">
+            <ImageButton
+                android:id="@+id/ibMenuBurguer"
+                android:src="@drawable/ic_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Herramientas"
+                android:textSize="32sp">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Menú lateral -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_tools"
+        app:menu="@menu/tools_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
 
 

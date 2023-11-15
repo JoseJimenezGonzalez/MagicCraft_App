@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.core.view.GravityCompat
 import com.example.magiccraftapp.databinding.FragmentToolsBinding
 
-
 class ToolsFragment : Fragment() {
 
     private var _binding: FragmentToolsBinding? = null
@@ -18,16 +17,22 @@ class ToolsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflar el layout y obtener la referencia al View Binding
+        // Inflar el diseño usando View Binding
         _binding = FragmentToolsBinding.inflate(inflater, container, false)
-        val view = binding.root
+        return binding.root
+    }
 
-        // Configurar el botón para abrir el menú lateral
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Manejar clic del botón para abrir el cajón de navegación
         binding.ibMenuBurguer.setOnClickListener {
-
+            openDrawer()
         }
+    }
 
-        return view
+    private fun openDrawer() {
+        binding.drawerLayoutTools.openDrawer(GravityCompat.START)
     }
 
     override fun onDestroyView() {
@@ -35,3 +40,8 @@ class ToolsFragment : Fragment() {
         _binding = null
     }
 }
+
+
+
+
+
