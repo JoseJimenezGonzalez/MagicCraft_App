@@ -23,21 +23,6 @@ class ToolsFragment : Fragment() {
     ): View? {
         // Inflar el layout y obtener la referencia al View Binding
         _binding = FragmentToolsBinding.inflate(inflater, container, false)
-        val view = binding.root
-
-        // Configurar el botón para abrir el menú lateral
-        binding.ivToolstyy.setOnClickListener {
-            // Obtener el DrawerLayout desde la actividad
-            val drawerLayout = requireActivity().findViewById<DrawerLayout>(R.id.drawer_layout)
-            // Abrir el menú lateral
-            drawerLayout.openDrawer(GravityCompat.START)
-        }
-
-        return view
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+        return binding.root
     }
 }
