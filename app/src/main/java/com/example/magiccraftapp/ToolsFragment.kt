@@ -2,6 +2,7 @@ package com.example.magiccraftapp
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.GravityCompat
@@ -34,7 +35,6 @@ class ToolsFragment : Fragment() {
         binding.ibMenuBurguer.setOnClickListener {
             openDrawer()
         }
-        initNavigation()
 
 
     }
@@ -48,12 +48,6 @@ class ToolsFragment : Fragment() {
         _binding = null
     }
 
-    private fun initNavigation() {
-        val navHost = childFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-        navController = navHost.navController
-        binding.navView.setupWithNavController(navController)
-
-    }
 }
 
 

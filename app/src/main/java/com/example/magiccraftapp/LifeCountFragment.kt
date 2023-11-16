@@ -52,5 +52,6 @@ class LifeCountFragment : Fragment() {
             oldValue -= 1
             binding.tvLifePlayer1.text = oldValue.toString()
         }
+
     }
 }

@@ -22,4 +22,28 @@ class StormCountFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        //Empieza la crema
+
+        setupButtons()
+
+    }
+
+    private fun setupButtons() {
+
+        binding.btnPlusSwamp.setOnClickListener {
+            var oldValue = binding.tvManaSwamp.text.toString().toInt()
+            oldValue += 1
+            binding.tvManaSwamp.text = oldValue.toString()
+        }
+
+        binding.btnMinusSwamp.setOnClickListener {
+            var oldValue = binding.tvManaSwamp.text.toString().toInt()
+            oldValue -= 1
+            binding.tvManaSwamp.text = oldValue.toString()
+        }
+    }
+
 }
