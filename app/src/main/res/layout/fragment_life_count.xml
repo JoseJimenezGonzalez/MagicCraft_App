@@ -6,6 +6,235 @@
     android:layout_height="match_parent"
     tools:context=".LifeCountFragment">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal4"
+        app:cardCornerRadius="16dp">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="45:00"
+            android:textAlignment="center"
+            android:textSize="100sp">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLifePlayer1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical1"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal1"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal2"
+        app:cardCornerRadius="16dp">
+
+        <TextView
+            android:id="@+id/tvLifePlayer1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="20"
+            android:textAlignment="center"
+            android:textSize="100sp">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLifePlayer2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal1"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal2"
+        app:cardCornerRadius="16dp">
+
+        <TextView
+            android:id="@+id/tvLifePlayer2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="20"
+            android:textAlignment="center"
+            android:textSize="100sp">
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPlusLifePlayer1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="16dp">
+        <Button
+            android:id="@+id/btnPlusLifePlayer1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="40sp">
+        </Button>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMinusLifePlayer1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical2"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical1"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="16dp">
+
+        <Button
+            android:id="@+id/btnMinusLifePlayer1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="40sp">
+        </Button>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPlusLifePlayer2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical3"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="16dp">
+        <Button
+            android:id="@+id/btnPlusLifePlayer2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="40sp">
+        </Button>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMinusLifePlayer2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="16dp">
+        <Button
+            android:id="@+id/btnMinusLifePlayer2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="40sp">
+        </Button>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPlusTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal4"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal5"
+        app:cardCornerRadius="16dp">
+        <Button
+            android:id="@+id/btnPlusTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="40sp">
+        </Button>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMinusTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical2"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical1"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal4"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal5"
+        app:cardCornerRadius="16dp">
+        <Button
+            android:id="@+id/btnMinusTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="40sp">
+        </Button>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvStartTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal4"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal5"
+        app:cardCornerRadius="16dp">
+        <Button
+            android:id="@+id/btnStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Start"
+            android:textAlignment="center"
+            android:textSize="40sp">
+        </Button>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPhotoPlayer1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical1"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal5"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal1"
+        app:cardCornerRadius="16dp">
+        <ImageView
+            android:id="@+id/ivPlayer1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPhotoPlayer2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal5"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal1"
+        app:cardCornerRadius="16dp">
+        <ImageView
+            android:id="@+id/ivPlayer2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineVertical1"
         android:layout_width="wrap_content"
@@ -14,10 +243,52 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineHorizontal1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
