@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TabTextInactive" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/tab_text_inactive_color</item>
+        <!-- Otros atributos de estilo que desees agregar -->
+    </style>
+
+    <style name="TabTextActive" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/tab_text_active_color</item>
+        <!-- Otros atributos de estilo que desees agregar -->
+    </style>
+</resources>

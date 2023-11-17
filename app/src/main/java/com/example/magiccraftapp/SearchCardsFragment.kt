@@ -93,7 +93,7 @@ class SearchCardsFragment : Fragment() {
                             val namee = card.name
                             val edition = card.set_name
                             val rarity = card.rarity
-                            val image = card.image_uris.large
+                            val image = card.image_uris.art_crop
                             var price = card.prices.eur
                             val text = card.oracle_text
                             val reserved = card.reserved.toString()

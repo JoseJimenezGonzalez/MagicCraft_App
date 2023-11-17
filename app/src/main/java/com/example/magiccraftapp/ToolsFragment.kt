@@ -31,21 +31,21 @@ class ToolsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Manejar clic del botón para abrir el cajón de navegación
-        binding.ibMenuBurguer.setOnClickListener {
-            openDrawer()
-        }
-
+        initUI()
 
     }
 
-    private fun openDrawer() {
-        binding.drawerLayoutTools.openDrawer(GravityCompat.START)
+    private fun initUI() {
+        initNavigation()
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    private fun initNavigation() {
+        // Utiliza childFragmentManager en lugar de supportFragmentManager
+        val navHostFragment = childFragmentManager.findFragmentById(R.id.nav_host_fragment_tools) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        // Utiliza viewLifecycleOwner al configurar la navegación
+        binding.bottomNavigationViewTools.setupWithNavController(navController)
     }
 
 }
