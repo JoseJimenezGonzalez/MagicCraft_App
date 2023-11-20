@@ -4,50 +4,42 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingBottom="15dp"
-    android:paddingTop="15dp">
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cvImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/cvAttributes"
-        app:cardCornerRadius="16dp">
-
-        <ImageView
-            android:id="@+id/ivCard"
-            android:layout_width="350dp"
-            android:layout_height="250dp"
-            android:scaleType="centerCrop"
-            android:paddingBottom="5dp">
-        </ImageView>
-
-    </androidx.cardview.widget.CardView>
+    android:paddingTop="20dp">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cvAttributes"
+        android:id="@+id/cvPrincipal"
         android:layout_width="350dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cvImage"
         app:cardCornerRadius="16dp">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvImage"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                app:cardCornerRadius="16dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/ivCard"
+                    android:layout_width="350dp"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:paddingBottom="5dp">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:id="@+id/tvCardName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 android:paddingBottom="5dp">
             </TextView>
 
@@ -56,9 +48,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvCardName"
                 android:paddingBottom="5dp">
             </TextView>
 
@@ -67,9 +56,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvCardEdition"
                 android:paddingBottom="5dp">
             </TextView>
 
@@ -78,9 +64,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvCardType"
                 android:paddingBottom="5dp">
             </TextView>
 
@@ -89,9 +72,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvCardManaCost"
                 android:paddingBottom="5dp">
             </TextView>
 
@@ -100,9 +80,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvCardPrice"
                 android:paddingBottom="5dp">
             </TextView>
 
@@ -111,9 +88,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvCardRarity"
                 android:paddingBottom="5dp">
             </TextView>
 
@@ -122,15 +96,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvCardReserved"
                 android:paddingBottom="5dp">
             </TextView>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
+        </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.cardview.widget.CardView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
