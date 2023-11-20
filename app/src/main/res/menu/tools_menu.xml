@@ -4,22 +4,22 @@
     tools:showIn="navigation_view">
     <item
         android:id="@+id/lifeCountFragment"
-        android:title="Contador de vidas"
+        android:title="Life"
         android:icon="@drawable/ic_count_life">
     </item>
     <item
         android:id="@+id/stormCountFragment"
-        android:title="Contador tormenta"
+        android:title="Storm"
         android:icon="@drawable/ic_storm">
     </item>
     <item
         android:id="@+id/tournamentFragment"
-        android:title="Hacer torneo"
+        android:title="Tournament"
         android:icon="@drawable/ic_tournament">
     </item>
     <item
         android:id="@+id/diceFragment"
-        android:title="Tirar dados"
+        android:title="Dice"
         android:icon="@drawable/ic_dice">
     </item>
 

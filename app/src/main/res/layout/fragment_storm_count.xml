@@ -2,49 +2,254 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".StormCountFragment">
 
-    <Button
-        android:id="@+id/btnPlusSwamp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/ivSwamp"
-        android:text="+">
-    </Button>
-
-    <ImageView
-        android:id="@+id/ivSwamp"
-        android:layout_width="100dp"
+    <LinearLayout
+        android:id="@+id/lySwamp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:src="@drawable/swamp_pixel_art"
-        app:layout_constraintStart_toEndOf="@id/btnPlusSwamp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/btnMinusSwamp">
-    </ImageView>
-
-    <Button
-        android:id="@+id/btnMinusSwamp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/ivSwamp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tvManaSwamp"
-        android:text="-">
-    </Button>
-
-    <TextView
-        android:id="@+id/tvManaSwamp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/btnMinusSwamp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="0"
-        android:textSize="60sp">
-    </TextView>
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal">
+        <Button
+            android:id="@+id/btnPlusSwamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+">
+        </Button>
+
+        <ImageView
+            android:id="@+id/ivSwamp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/black_retro_mana">
+        </ImageView>
+
+        <Button
+            android:id="@+id/btnMinusSwamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-">
+        </Button>
+
+        <TextView
+            android:id="@+id/tvManaSwamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="60sp">
+        </TextView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lyMountain"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/lySwamp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal">
+        <Button
+            android:id="@+id/btnPlusMountain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+">
+        </Button>
+
+        <ImageView
+            android:id="@+id/ivMountain"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/red_retro_mana">
+        </ImageView>
+
+        <Button
+            android:id="@+id/btnMinusMountain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-">
+        </Button>
+
+        <TextView
+            android:id="@+id/tvManaMountain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="60sp">
+        </TextView>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lyIsland"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/lyMountain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal">
+        <Button
+            android:id="@+id/btnPlusIsland"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+">
+        </Button>
+
+        <ImageView
+            android:id="@+id/ivIsland"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/blue_retro_mana">
+        </ImageView>
+
+        <Button
+            android:id="@+id/btnMinusIsland"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-">
+        </Button>
+
+        <TextView
+            android:id="@+id/tvManaIsland"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="60sp">
+        </TextView>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lyForest"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/lyIsland"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal">
+        <Button
+            android:id="@+id/btnPlusForest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+">
+        </Button>
+
+        <ImageView
+            android:id="@+id/ivForest"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/green_retro_mana">
+        </ImageView>
+
+        <Button
+            android:id="@+id/btnMinusForest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-">
+        </Button>
+
+        <TextView
+            android:id="@+id/tvManaForest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="60sp">
+        </TextView>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lyPlains"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/lyForest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal">
+        <Button
+            android:id="@+id/btnPlusPlains"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+">
+        </Button>
+
+        <ImageView
+            android:id="@+id/ivPlains"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/white_retro_mana">
+        </ImageView>
+
+        <Button
+            android:id="@+id/btnMinusPlains"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-">
+        </Button>
+
+        <TextView
+            android:id="@+id/tvManaPlains"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="60sp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyStorm"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/lyPlains"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal">
+        <Button
+            android:id="@+id/btnPlusStorm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+">
+        </Button>
+
+        <ImageView
+            android:id="@+id/ivStorm"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/storm">
+        </ImageView>
+
+        <Button
+            android:id="@+id/btnMinusStorm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-">
+        </Button>
+
+        <TextView
+            android:id="@+id/tvManaStorm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="60sp">
+        </TextView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

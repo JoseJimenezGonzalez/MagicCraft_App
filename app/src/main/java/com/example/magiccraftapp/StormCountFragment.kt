@@ -32,7 +32,7 @@ class StormCountFragment : Fragment() {
     }
 
     private fun setupButtons() {
-
+        //Pantano
         binding.btnPlusSwamp.setOnClickListener {
             var oldValue = binding.tvManaSwamp.text.toString().toInt()
             oldValue += 1
@@ -43,6 +43,67 @@ class StormCountFragment : Fragment() {
             var oldValue = binding.tvManaSwamp.text.toString().toInt()
             oldValue -= 1
             binding.tvManaSwamp.text = oldValue.toString()
+        }
+        //Montaña
+        binding.btnPlusMountain.setOnClickListener {
+            var oldValue = binding.tvManaMountain.text.toString().toInt()
+            oldValue += 1
+            binding.tvManaMountain.text = oldValue.toString()
+        }
+
+        binding.btnMinusMountain.setOnClickListener {
+            var oldValue = binding.tvManaMountain.text.toString().toInt()
+            oldValue -= 1
+            binding.tvManaMountain.text = oldValue.toString()
+        }
+        //Forest
+
+        binding.btnPlusForest.setOnClickListener {
+            var oldValue = binding.tvManaForest.text.toString().toInt()
+            oldValue += 1
+            binding.tvManaForest.text = oldValue.toString()
+        }
+
+        binding.btnMinusForest.setOnClickListener {
+            var oldValue = binding.tvManaForest.text.toString().toInt()
+            oldValue -= 1
+            binding.tvManaForest.text = oldValue.toString()
+        }
+        //Isla
+        binding.btnPlusIsland.setOnClickListener {
+            var oldValue = binding.tvManaIsland.text.toString().toInt()
+            oldValue += 1
+            binding.tvManaIsland.text = oldValue.toString()
+        }
+
+        binding.btnMinusIsland.setOnClickListener {
+            var oldValue = binding.tvManaIsland.text.toString().toInt()
+            oldValue -= 1
+            binding.tvManaIsland.text = oldValue.toString()
+        }
+        //Llanura
+        binding.btnPlusPlains.setOnClickListener {
+            var oldValue = binding.tvManaPlains.text.toString().toInt()
+            oldValue += 1
+            binding.tvManaPlains.text = oldValue.toString()
+        }
+
+        binding.btnMinusPlains.setOnClickListener {
+            var oldValue = binding.tvManaPlains.text.toString().toInt()
+            oldValue -= 1
+            binding.tvManaPlains.text = oldValue.toString()
+        }
+        //Stomr
+        binding.btnPlusStorm.setOnClickListener {
+            var oldValue = binding.tvManaStorm.text.toString().toInt()
+            oldValue += 1
+            binding.tvManaStorm.text = oldValue.toString()
+        }
+
+        binding.btnMinusStorm.setOnClickListener {
+            var oldValue = binding.tvManaStorm.text.toString().toInt()
+            oldValue -= 1
+            binding.tvManaStorm.text = oldValue.toString()
         }
     }
 
