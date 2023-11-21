@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/background">
 
     <LinearLayout
         android:id="@+id/lyNameApp"
@@ -12,7 +13,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etMail">
 
         <TextView
             android:layout_width="match_parent"
@@ -20,7 +22,8 @@
             android:text="Bienvenido a MagicCraft"
             android:padding="14dp"
             android:textSize="24sp"
-            android:textAlignment="center">
+            android:textAlignment="center"
+            android:textColor="@color/white">
         </TextView>
 
     </LinearLayout>
@@ -33,6 +36,7 @@
         app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
         app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
         app:layout_constraintBottom_toTopOf="@id/etPassword"
+        android:textColor="@color/white"
         android:inputType="textEmailAddress"
         android:hint="Introduce el correo electronico">
     </EditText>
@@ -45,6 +49,7 @@
         app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
         app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
         app:layout_constraintBottom_toTopOf="@id/btnLogin"
+        android:textColor="@color/white"
         android:inputType="textPassword"
         android:hint="Introduce la contraseña">
     </EditText>
@@ -64,6 +69,7 @@
         android:id="@+id/tvRememberPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
         app:layout_constraintTop_toBottomOf="@id/btnLogin"
         app:layout_constraintBottom_toTopOf="@id/tvCreateAccount"
@@ -74,6 +80,7 @@
         android:id="@+id/tvCreateAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
         app:layout_constraintTop_toBottomOf="@id/tvRememberPassword"
         app:layout_constraintBottom_toTopOf="@id/tvTermsPrivacity"
@@ -84,6 +91,7 @@
         android:id="@+id/tvTermsPrivacity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
         app:layout_constraintTop_toBottomOf="@id/tvCreateAccount"
         app:layout_constraintBottom_toBottomOf="parent"
