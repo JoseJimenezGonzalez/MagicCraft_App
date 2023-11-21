@@ -1,6 +1,7 @@
 package com.example.magiccraftapp
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -32,16 +33,43 @@ class CreateAccountActivity : AppCompatActivity() {
     }
 
     private fun validateData() {
-        val email = binding.etMail.text.toString()
-        val password = binding.etPassword.text.toString()
-        val passwordRepeat = binding.etRepeatPassword.text.toString()
-        if (email.isEmpty()){
-            Toast.makeText(this, "Introduce el correo electronico", Toast.LENGTH_SHORT).show()
-        }else if(password.isEmpty() || passwordRepeat.isEmpty()){
-            Toast.makeText(this, "El campo de las contraseñas tiene que rellenarse", Toast.LENGTH_SHORT).show()
-        }else if(!password.equals(passwordRepeat)){
-            Toast.makeText(this, "Las contraseñas no son iguales", Toast.LENGTH_SHORT).show()
+        val email = binding.tietMail.text.toString()
+        val password = binding.tietPassword.text.toString()
+        val passwordRepeat = binding.tietRepeatPassword.text.toString()
+        var validateEmail = false
+        var validatePasswordNotEmpty = false
+        var validatePasswordAreEquals = false
+        if (email.isEmpty() || !email.contains("@") || !email.contains(".")){
+            binding.tilMail.error = "El mail no puede estar vacio"
         }else{
+            binding.tilMail.error = null // Limpiar el error si hay uno
+            binding.tilMail.boxStrokeColor = Color.GREEN
+            validateEmail = true
+        }
+        if(password.isEmpty() || passwordRepeat.isEmpty()){
+            binding.tilPassword.error = "La contraseña es obligatioria"
+            binding.tilRepeatPassword.error = "La contraseña es obligatioria"
+        }else{
+            binding.tilPassword.error = null
+            binding.tilRepeatPassword.error = null
+
+            binding.tilPassword.boxStrokeColor = Color.GREEN
+            binding.tilRepeatPassword.boxStrokeColor = Color.GREEN
+            validatePasswordNotEmpty = true
+        }
+        if(password != passwordRepeat){
+            binding.tilPassword.error = "Las contraseñas no coinciden"
+            binding.tilRepeatPassword.error = "Las contraseñas no coinciden"
+        }else{
+            binding.tilPassword.error = null
+            binding.tilRepeatPassword.error = null
+
+            binding.tilPassword.boxStrokeColor = Color.GREEN
+            binding.tilRepeatPassword.boxStrokeColor = Color.GREEN
+
+            validatePasswordAreEquals = true
+        }
+        if(validateEmail && validatePasswordNotEmpty && validatePasswordAreEquals){
             registerUser(email, password)
         }
     }

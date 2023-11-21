@@ -25,41 +25,56 @@
 
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/etMail"
-        android:layout_width="0dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilMail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Ingrese su correo electronico"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lyNameApp"
-        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
-        app:layout_constraintBottom_toTopOf="@id/etPassword"
-        android:inputType="textEmailAddress"
-        android:hint="Introduce el correo electronico">
-    </EditText>
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="0dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/etMail"
-        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
-        app:layout_constraintBottom_toTopOf="@id/etRepeatPassword"
-        android:inputType="textPassword"
-        android:hint="Introduce la contraseña">
-    </EditText>
+        android:hint="Ingrese su contraseña"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilMail">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/etRepeatPassword"
-        android:layout_width="0dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRepeatPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/etPassword"
-        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@id/btnCreateAccount"
-        android:hint="Introduce la contraseña">
-    </EditText>
+        android:hint="Ingrese su contraseña"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilPassword"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietRepeatPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnCreateAccount"
@@ -67,8 +82,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
         app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
-        app:layout_constraintTop_toBottomOf="@id/etRepeatPassword"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilRepeatPassword"
         android:text="Crear cuenta">
     </Button>
 
