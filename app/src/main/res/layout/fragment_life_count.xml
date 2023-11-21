@@ -77,14 +77,12 @@
         app:layout_constraintTop_toTopOf="@id/guidelineHorizontal3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:cardCornerRadius="16dp">
-        <Button
+        <ImageButton
             android:id="@+id/btnPlusLifePlayer1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="+"
-            android:textAlignment="center"
-            android:textSize="40sp">
-        </Button>
+            android:src="@drawable/ic_add">
+        </ImageButton>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -96,15 +94,12 @@
         app:layout_constraintTop_toTopOf="@id/guidelineHorizontal3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:cardCornerRadius="16dp">
-
-        <Button
+        <ImageButton
             android:id="@+id/btnMinusLifePlayer1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="-"
-            android:textAlignment="center"
-            android:textSize="40sp">
-        </Button>
+            android:src="@drawable/ic_remove">
+        </ImageButton>
 
     </androidx.cardview.widget.CardView>
 
@@ -117,14 +112,12 @@
         app:layout_constraintTop_toTopOf="@id/guidelineHorizontal3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:cardCornerRadius="16dp">
-        <Button
+        <ImageButton
             android:id="@+id/btnPlusLifePlayer2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="+"
-            android:textAlignment="center"
-            android:textSize="40sp">
-        </Button>
+            android:src="@drawable/ic_add">
+        </ImageButton>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -136,14 +129,12 @@
         app:layout_constraintTop_toTopOf="@id/guidelineHorizontal3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:cardCornerRadius="16dp">
-        <Button
+        <ImageButton
             android:id="@+id/btnMinusLifePlayer2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="-"
-            android:textAlignment="center"
-            android:textSize="40sp">
-        </Button>
+            android:src="@drawable/ic_remove">
+        </ImageButton>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -155,14 +146,12 @@
         app:layout_constraintTop_toTopOf="@id/guidelineHorizontal4"
         app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal5"
         app:cardCornerRadius="16dp">
-        <Button
+        <ImageButton
             android:id="@+id/btnPlusTime"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="+"
-            android:textAlignment="center"
-            android:textSize="40sp">
-        </Button>
+            android:src="@drawable/ic_add">
+        </ImageButton>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -174,14 +163,12 @@
         app:layout_constraintTop_toTopOf="@id/guidelineHorizontal4"
         app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal5"
         app:cardCornerRadius="16dp">
-        <Button
-            android:id="@+id/btnMinusTime"
+        <ImageButton
+            android:id="@+id/btnRemoveTime"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="-"
-            android:textAlignment="center"
-            android:textSize="40sp">
-        </Button>
+            android:src="@drawable/ic_remove">
+        </ImageButton>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -193,14 +180,12 @@
         app:layout_constraintTop_toTopOf="@id/guidelineHorizontal4"
         app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal5"
         app:cardCornerRadius="16dp">
-        <Button
+        <ImageButton
             android:id="@+id/btnStartTime"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Start"
-            android:textAlignment="center"
-            android:textSize="40sp">
-        </Button>
+            android:src="@drawable/ic_start">
+        </ImageButton>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView

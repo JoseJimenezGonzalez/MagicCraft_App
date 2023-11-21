@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".StormCountFragment">
 
@@ -13,14 +13,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lyMountain"
         android:orientation="horizontal"
         android:gravity="center_vertical|center_horizontal">
-        <Button
+        <ImageButton
             android:id="@+id/btnPlusSwamp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+">
-        </Button>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_add">
+        </ImageButton>
 
         <ImageView
             android:id="@+id/ivSwamp"
@@ -29,12 +30,12 @@
             android:src="@drawable/black_retro_mana">
         </ImageView>
 
-        <Button
+        <ImageButton
             android:id="@+id/btnMinusSwamp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-">
-        </Button>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_remove">
+        </ImageButton>
 
         <TextView
             android:id="@+id/tvManaSwamp"
@@ -54,14 +55,15 @@
         app:layout_constraintTop_toBottomOf="@id/lySwamp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lyIsland"
         android:orientation="horizontal"
         android:gravity="center_vertical|center_horizontal">
-        <Button
+        <ImageButton
             android:id="@+id/btnPlusMountain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+">
-        </Button>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_add">
+        </ImageButton>
 
         <ImageView
             android:id="@+id/ivMountain"
@@ -70,12 +72,12 @@
             android:src="@drawable/red_retro_mana">
         </ImageView>
 
-        <Button
+        <ImageButton
             android:id="@+id/btnMinusMountain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-">
-        </Button>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_remove">
+        </ImageButton>
 
         <TextView
             android:id="@+id/tvManaMountain"
@@ -97,14 +99,15 @@
         app:layout_constraintTop_toBottomOf="@id/lyMountain"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lyForest"
         android:orientation="horizontal"
         android:gravity="center_vertical|center_horizontal">
-        <Button
+        <ImageButton
             android:id="@+id/btnPlusIsland"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+">
-        </Button>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_add">
+        </ImageButton>
 
         <ImageView
             android:id="@+id/ivIsland"
@@ -113,12 +116,12 @@
             android:src="@drawable/blue_retro_mana">
         </ImageView>
 
-        <Button
+        <ImageButton
             android:id="@+id/btnMinusIsland"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-">
-        </Button>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_remove">
+        </ImageButton>
 
         <TextView
             android:id="@+id/tvManaIsland"
@@ -139,14 +142,15 @@
         app:layout_constraintTop_toBottomOf="@id/lyIsland"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lyPlains"
         android:orientation="horizontal"
         android:gravity="center_vertical|center_horizontal">
-        <Button
+        <ImageButton
             android:id="@+id/btnPlusForest"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+">
-        </Button>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_add">
+        </ImageButton>
 
         <ImageView
             android:id="@+id/ivForest"
@@ -155,12 +159,12 @@
             android:src="@drawable/green_retro_mana">
         </ImageView>
 
-        <Button
+        <ImageButton
             android:id="@+id/btnMinusForest"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-">
-        </Button>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_remove">
+        </ImageButton>
 
         <TextView
             android:id="@+id/tvManaForest"
@@ -181,14 +185,15 @@
         app:layout_constraintTop_toBottomOf="@id/lyForest"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lyStorm"
         android:orientation="horizontal"
         android:gravity="center_vertical|center_horizontal">
-        <Button
+        <ImageButton
             android:id="@+id/btnPlusPlains"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+">
-        </Button>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_add">
+        </ImageButton>
 
         <ImageView
             android:id="@+id/ivPlains"
@@ -197,12 +202,12 @@
             android:src="@drawable/white_retro_mana">
         </ImageView>
 
-        <Button
+        <ImageButton
             android:id="@+id/btnMinusPlains"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-">
-        </Button>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_remove">
+        </ImageButton>
 
         <TextView
             android:id="@+id/tvManaPlains"
@@ -220,14 +225,15 @@
         app:layout_constraintTop_toBottomOf="@id/lyPlains"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:orientation="horizontal"
         android:gravity="center_vertical|center_horizontal">
-        <Button
+        <ImageButton
             android:id="@+id/btnPlusStorm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+">
-        </Button>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_add">
+        </ImageButton>
 
         <ImageView
             android:id="@+id/ivStorm"
@@ -236,12 +242,12 @@
             android:src="@drawable/storm">
         </ImageView>
 
-        <Button
+        <ImageButton
             android:id="@+id/btnMinusStorm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-">
-        </Button>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_remove">
+        </ImageButton>
 
         <TextView
             android:id="@+id/tvManaStorm"
