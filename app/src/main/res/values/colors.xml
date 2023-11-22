@@ -8,4 +8,14 @@
     <color name="tab_text_inactive_color">#757575</color> <!-- Gris oscuro -->
     <color name="tab_text_active_color">#000000</color> <!-- Negro -->
 
+    <color name="primary_container">#6750A4</color> <!-- Negro -->
+    <color name="primary">#FFFFFF</color> <!-- Negro -->
+    <color name="on_primary">#EADDFF</color> <!-- Negro -->
+    <color name="on_primary_container">#21005D</color> <!-- Negro -->
+
+    <color name="secondary_container">#E8DEF8</color> <!-- Negro -->
+    <color name="secondary">#625B71</color> <!-- Negro -->
+    <color name="on_secondary">#FFFFFF</color> <!-- Negro -->
+    <color name="on_secondary_container">#1D192B</color> <!-- Negro -->
+
 </resources>

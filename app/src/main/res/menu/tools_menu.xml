@@ -9,8 +9,7 @@
     </item>
     <item
         android:id="@+id/stormCountFragment"
-        android:title="Storm"
-        android:icon="@drawable/ic_storm">
+        android:title="Storm">
     </item>
     <item
         android:id="@+id/tournamentFragment"

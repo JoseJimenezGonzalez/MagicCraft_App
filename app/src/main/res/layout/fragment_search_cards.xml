@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SearchCardsFragment"
-    android:background="@color/material_dynamic_neutral90">
+    android:background="@color/primary">
 
     <TextView
         android:id="@+id/tvSearchCards"
